@@ -26,6 +26,3 @@ class TestDetermineBestOption(unittest.TestCase):
   def test_repeating_truck_check(self):
     self.assertEqual(repeating_truck_check(self.first_option, self.second_option),
       (set(['Batmobile'])))
-
-if __name__ == '__main__':
-  unittest.main()

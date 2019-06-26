@@ -1,4 +1,4 @@
-#helper to determine best option for same truck going to two different cargos
+# helper to determine best option for same truck going to two different cargos
 
 def eliminate_duplicates(current_best_option, first_option, second_option, repeating_trucks):
   optimized_option = current_best_option

@@ -42,6 +42,3 @@ class TestPrimarySecondaryOptions(unittest.TestCase):
         'B': {'Alfredo': 26.31372612524318},
         'D': {'Caramel Swirls': 52.031417601311496}
       }))
-
-if __name__ == '__main__':
-  unittest.main()

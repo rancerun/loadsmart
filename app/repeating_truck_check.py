@@ -1,4 +1,4 @@
-#checks for edge cases with the same truck as the best option for multiple cargos
+# checks for edge cases with the same truck as the best option for multiple cargos
 
 import sys
 sys.path.append('.')
