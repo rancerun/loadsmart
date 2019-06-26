@@ -4,7 +4,7 @@
 
 import unittest
 import sys
-sys.path.append('../app')
+sys.path.append('../app/')
 import main
 
 class TestMain(unittest.TestCase):
@@ -40,3 +40,6 @@ class TestMain(unittest.TestCase):
       'B': {'Batmobile': 6.409864033717816},
       'D': {'Banana Boat': 46.0}
     })
+
+if __name__ == '__main__':
+    unittest.main()

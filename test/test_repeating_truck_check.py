@@ -1,6 +1,6 @@
 import unittest
 import sys
-sys.path.append('../app')
+sys.path.append('../app/')
 from repeating_truck_check import repeating_truck_check
 
 class TestDetermineBestOption(unittest.TestCase):

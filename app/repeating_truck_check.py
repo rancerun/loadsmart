@@ -1,7 +1,5 @@
 # checks for edge cases with the same truck as the best option for multiple cargos
 
-import sys
-sys.path.append('.')
 from eliminate_duplicates import eliminate_duplicates
 
 def repeating_truck_check(first_option, second_option):

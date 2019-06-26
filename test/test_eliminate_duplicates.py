@@ -1,6 +1,6 @@
 import unittest
 import sys
-sys.path.append('../app')
+sys.path.append('../app/')
 from eliminate_duplicates import eliminate_duplicates
 
 class TestEliminateDuplicates(unittest.TestCase):

@@ -1,10 +1,4 @@
-#!/usr/bin/env python
-
-import sys
-sys.path.append('../static')
-from data import cargos, trucks
-
-sys.path.append('.')
+from static.data import cargos, trucks
 from primary_secondary_options import primary_secondary_options
 from repeating_truck_check import repeating_truck_check
 from eliminate_duplicates import eliminate_duplicates

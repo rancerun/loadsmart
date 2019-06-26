@@ -1,6 +1,6 @@
 import unittest
 import sys
-sys.path.append('../app')
+sys.path.append('../app/')
 import calculations as cal
 
 class TestCalculations(unittest.TestCase):
