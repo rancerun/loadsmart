@@ -48,4 +48,5 @@ def eliminate_duplicates(current_best_option, first_option, second_option, repea
     else:
       optimized_option[first_cargo] = second_option[first_cargo]
       optimized_option[second_cargo] = first_option[second_cargo]
+      
   return optimized_option

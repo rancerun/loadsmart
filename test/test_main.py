@@ -40,6 +40,3 @@ class TestMain(unittest.TestCase):
       'B': {'Batmobile': 6.409864033717816},
       'D': {'Banana Boat': 46.0}
     })
-
-if __name__ == '__main__':
-    unittest.main()
