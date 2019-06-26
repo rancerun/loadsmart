@@ -1,7 +1,8 @@
-import unittest
 import sys
-sys.path.append('../app/')
-import calculations as cal
+import os
+import unittest
+sys.path.append(os.path.abspath('../app'))
+import app.calculations as cal
 
 class TestCalculations(unittest.TestCase):
   def test_pythagorean(self):

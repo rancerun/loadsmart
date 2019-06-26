@@ -1,7 +1,8 @@
-import unittest
 import sys
-sys.path.append('../app/')
-from primary_secondary_options import primary_secondary_options
+import os
+import unittest
+sys.path.append(os.path.abspath('../app'))
+from app.primary_secondary_options import primary_secondary_options
 
 class TestPrimarySecondaryOptions(unittest.TestCase):
 

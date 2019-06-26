@@ -1,16 +1,18 @@
 README
 
-Thanks for checking out my application!
+Thank you for checking out my application!
 
 Using Python version 2.7.10
 
-## App command
+## Usage
+
+To run the application:
 
 ```
 $ python ./app/main.py
 ```
 
-## Test command
+To run the tests:
 
 ```
 $ python -m unittest discover test

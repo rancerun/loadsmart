@@ -2,7 +2,6 @@
 
 import calculations as cal
 
-
 def primary_secondary_options(cargos, trucks):
   first_option = {} 
   second_option = {}

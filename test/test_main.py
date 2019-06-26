@@ -1,11 +1,11 @@
 #my test highlights a potential edge case not touched on in the problem 
 #cargo A and cargo B have the same trucks for both first and second options
 #this leads to outputs with the same truck for multiple cargos
-
-import unittest
 import sys
-sys.path.append('../app/')
-import main
+import os
+import unittest
+sys.path.append(os.path.abspath('../app'))
+import app.main as main
 
 class TestMain(unittest.TestCase):
 
