@@ -6,7 +6,7 @@ import app.duplicates_check as dc
 
 class TestDuplicatesCheck(unittest.TestCase):
   def setUp(self):
-    print('setup')
+    print('setup dupe check')
     self.cargo_options = {
       'A': [{'Batmobile': 17.757531886594617}, {'Alfredo': 18.390497377276045}],
       'C': [{'Batmobile': 6.981600672073832}, {'Alfredo': 25.335222757961162}],
@@ -18,7 +18,7 @@ class TestDuplicatesCheck(unittest.TestCase):
     self.repeating_trucks = (['Batmobile'])
 
   def tearDown(self):
-    print('teardown')
+    print('teardown dupe checks')
 
   def test_repeating_truck_check(self):
     self.assertEqual(dc.repeating_truck_check(self.cargo_options),

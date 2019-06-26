@@ -5,9 +5,8 @@ sys.path.append(os.path.abspath('../app'))
 from app.primary_secondary_options import primary_secondary_options
 
 class TestPrimarySecondaryOptions(unittest.TestCase):
-
   def setUp(self):
-    print('setup')
+    print('setup primary secondary')
     self.cargos = {
       'A': {'o_lat': 44.4582983, 'o_lng': -73.161604, 'd_lat': 42.3636331, 'd_lng': -87.8447938},
       'B': {'o_lat': 13.756331, 'o_lng': 100.501762, 'd_lat': 13.528650, 'd_lng': 99.813263},
@@ -27,7 +26,7 @@ class TestPrimarySecondaryOptions(unittest.TestCase):
     }
 
   def tearDown(self):
-    print('teardown')
+    print('teardown primary secondary')
 
   def test_primary_secondary_options(self):
     self.assertEqual(primary_secondary_options(self.cargos, self.trucks), ({
