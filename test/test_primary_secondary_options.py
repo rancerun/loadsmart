@@ -9,7 +9,7 @@ class TestPrimarySecondaryOptions(unittest.TestCase):
   def setUp(self):
     print('setup')
     self.cargos = {
-      'A': {'o_lat': 44.4582983, 'o_lng': -93.161604, 'd_lat': 42.3636331, 'd_lng': -87.8447938},
+      'A': {'o_lat': 44.4582983, 'o_lng': -73.161604, 'd_lat': 42.3636331, 'd_lng': -87.8447938},
       'B': {'o_lat': 13.756331, 'o_lng': 100.501762, 'd_lat': 13.528650, 'd_lng': 99.813263},
       'C': {'o_lat': 39.9524, 'o_lng': -75.1636, 'd_lat': 43.1031, 'd_lng': -79.0303},
       'D': {'o_lat': 1, 'o_lng': 1, 'd_lat': 45, 'd_lng': 13}
@@ -31,7 +31,7 @@ class TestPrimarySecondaryOptions(unittest.TestCase):
 
   def test_primary_secondary_options(self):
     self.assertEqual(primary_secondary_options(self.cargos, self.trucks), ({
-      'A': [{'Alfredo': 5.79198868163568}, {'Batmobile': 33.47924517190808}],
+      'A': [{'Batmobile': 17.757531886594617}, {'Alfredo': 18.390497377276045}],
       'C': [{'Batmobile': 6.981600672073832}, {'Alfredo': 25.335222757961162}],
       'B': [{'Slam Dunk': 90.64425911395827}, {'Zebra Stripes': 130.15019508740355}],
       'D': [{'Banana Boat': 46.0}, {'Caramel Swirls': 52.031417601311496}]}))

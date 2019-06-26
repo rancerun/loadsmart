@@ -1,4 +1,4 @@
-# helpers to identify trucks carrying multiple loads and finding optimal solution instead 
+# helpers to identify and correct duplicate trucks carrying multiple loads
 
 def repeating_truck_check(cargo_options):
   used_trucks = set()

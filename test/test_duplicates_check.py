@@ -8,12 +8,12 @@ class TestDuplicatesCheck(unittest.TestCase):
   def setUp(self):
     print('setup')
     self.cargo_options = {
-      'A': [{'Alfredo': 5.79198868163568}, {'Batmobile': 33.47924517190808}],
+      'A': [{'Batmobile': 17.757531886594617}, {'Alfredo': 18.390497377276045}],
       'C': [{'Batmobile': 6.981600672073832}, {'Alfredo': 25.335222757961162}],
-      'B': [{'Batmobile': 6.409864033717816}, {'Alfredo': 26.31372612524318}],
+      'B': [{'Slam Dunk': 90.64425911395827}, {'Zebra Stripes': 130.15019508740355}],
       'D': [{'Banana Boat': 46.0}, {'Caramel Swirls': 52.031417601311496}]}
     self.best_options = {
-      'A': {'Alfredo': 5.79198868163568},
+      'B': {'Slam Dunk': 90.64425911395827},
       'D': {'Banana Boat': 46.0}}
     self.repeating_trucks = (['Batmobile'])
 
@@ -26,8 +26,8 @@ class TestDuplicatesCheck(unittest.TestCase):
 
   def test_eliminate_duplicates(self):
     self.assertEqual(dc.eliminate_duplicates(self.best_options, self.cargo_options, self.repeating_trucks), ({
-        'A': {'Alfredo': 5.79198868163568},
-        'C': {'Alfredo': 25.335222757961162},
-        'B': {'Batmobile': 6.409864033717816},
+        'A': {'Alfredo': 18.390497377276045},
+        'B': {'Slam Dunk': 90.64425911395827},
+        'C': {'Batmobile': 6.981600672073832},
         'D': {'Banana Boat': 46.0}
       }))
